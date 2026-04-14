@@ -34,10 +34,14 @@ int main(int argc, char** argv) {
 
 	setPrintOffsetX(2);
 	setPrintOffsetY(2);
-
-	for (;;) {
+	int cnt = 0;
+	while (++cnt % 100000 != 0 || getKeyPress() != 27) {
 		tny_clock(&t);
 	}
+
+	clearColor();
+	resetCursorVis();
+	clear();
 
 	printf("\n");
 	return EXIT_SUCCESS;

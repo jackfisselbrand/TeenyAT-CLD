@@ -1,0 +1,3 @@
+[submodule "cld/RogueWrapper"]
+	path = cld/RogueWrapper
+	url = https://github.com/jackfisselbrand/RogueWrapper.git

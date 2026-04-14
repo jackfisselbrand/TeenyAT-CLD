@@ -14,6 +14,7 @@
 .const RCURVIS 0x900B
 
 	str [ CLS ], rZ
+	str [ CURVIS ], rZ
 
 	set rD, 0
 	set rE, 0
