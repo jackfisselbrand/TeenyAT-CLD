@@ -15,6 +15,7 @@
 
 	set rD, '#'
 	str [ CLS ], rZ
+	str [ CURVIS ], rZ
 	str [ CHAR ], rD
 
 	set rA, 0

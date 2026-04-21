@@ -26,9 +26,13 @@
 	
 	set rA, !cld
 
+
+
 !main
 	cmp rA, !cld_end
 	je !done
+
+
 
 !get_next_char
 	lod rB, [ rA ]
@@ -53,12 +57,12 @@
 
 	jmp !main
 
+
+
 !reset_color
 	set rC, 1
 	str [ FGCOLOR ], rC
 	jmp !main
-
-	
 
 
 

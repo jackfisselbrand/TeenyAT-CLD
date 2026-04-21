@@ -1,8 +1,54 @@
+/*
+	A teenyat system designed to provide basic terminal graphics functions
+	Written by Jack R. Fisselbrand
+	April 2026
+	Language: C
+	Compiler: gcc
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 #include "teenyat.h"
 #include "RogueWrapper/roguewrapper.h"
+
+/*
+	X1: read and write
+		access or modify the X1 coordinate
+
+	Y1: read and write
+		access or modify the Y1 coordinate
+
+	CURVIS: read and write
+		access or modify the cursor visibility. 0 = cursor invisible, !0 = cursor visible
+
+	CHAR: read and write
+		access or modify the character at the X1, Y1 position
+
+	FGCOLOR: read and write
+		access or modify the foreground color at the X1, Y1 position
+
+	BGCOLOR: read and write
+		access or modify the background color at the X1, Y1 position
+
+	KEY: read
+		access the current key being pressed
+
+	PRINT: write
+		print the BGCOLOR, FGCOLOR, and CHAR at the X1, Y1 position and advance the cursor
+
+	STAMP: write
+		print the BGCOLOR, FGCOLOR, and CHAR at the X1, Y1 position and don't advance the cursor
+
+	CLS: write
+		clear the screen
+
+	RCOLOR: write
+		reset all colors on the scren
+
+	RCURVIS: write
+		reset the cursor visibility to visible
+*/
 
 #define X1 0x9000
 #define Y1 0x9001
